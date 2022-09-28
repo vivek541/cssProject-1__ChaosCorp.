@@ -1,0 +1,678 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-family: Roboto, sans-serif;
+  color: white;
+  background-color: #10162f;
+}
+hr {
+  padding: 0;
+  margin: 0 0 0 0;
+  height: 2px;
+  border: 0;
+  background: rgb(255, 255, 255);
+  background: radial-gradient(circle, dodgerblue 0%, rgba(16, 22, 47, 1) 100%);
+}
+
+#mainArea {
+  width: 1350px;
+  height: 6310px;
+  background: #10162f;
+  background: url("../resources/bf3.jpg") fixed no-repeat;
+  background-size: 100%;
+  margin: 0 auto;
+}
+#topArea {
+  width: 1350px;
+  height: 60px;
+  border-bottom: solid 1.5px #e5e5e5;
+  padding: 6px 12px 0px 12px;
+  margin: auto;
+  backdrop-filter: blur(9px); /**!!**/
+  position: fixed;
+  z-index: 1000;
+}
+#topArea h1 {
+  text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.84);
+  float: left;
+  background-color: #e00000;
+  margin-top: 8px;
+  padding: 1px 6px 3px 10px;
+  font-weight: 100;
+  color: #fdfefe;
+  font-size: 30px;
+  border: solid white 2px;
+  letter-spacing: 3px;
+  font-family: "Oswald", sans-serif;
+}
+/*------------------------------------------*/
+#menu {
+  float: left;
+  margin-left: 4.8px;
+  margin-top: 8px;
+  padding: 0px;
+  font-size: 14px;
+  font-family: "Quantico", sans-serif;
+}
+#menu a {
+  text-decoration: none;
+  color: #e5e5e5;
+}
+#menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#menu ul li {
+  float: left;
+}
+#menu ul li a:link,
+#menu ul li a:visited {
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0);
+  display: block;
+  padding: 10px 20px;
+}
+#menu ul li a:hover {
+  color: #10162f;
+  background: cyan;
+}
+#menu ul li:last-child a:link,
+#menu ul li:last-child a:visited {
+  border: none;
+}
+#menu ul li ul {
+  display: none;
+  border-top: solid 10px rgba(0, 0, 0, 0);
+  width: 600px;
+}
+/******************************************/
+#menu ul li:hover #army {
+  display: block;
+  position: absolute;
+  z-index: 1000;
+  background: url("../resources/tankWh.png") center right no-repeat;
+  background-size: 500px;
+}
+#menu ul li:hover #navy {
+  display: block;
+  position: absolute;
+  z-index: 1000;
+  background: url("../resources/sub.png") center right no-repeat;
+  background-size: 400px 150px;
+}
+#menu ul li:hover #airForce {
+  display: block;
+  position: absolute;
+  z-index: 1000;
+  background: url("../resources/migWhite.png") center right no-repeat;
+  background-size: 350px;
+}
+/********************************************/
+#menu ul li:hover ul li {
+  float: none;
+  background-color: #10162f;
+  opacity: 0.92;
+  color: #10162f;
+}
+#menu ul li:hover ul li a:link,
+#menu ul li:hover ul li a:visited {
+  border: none;
+  border-bottom: solid 0px #10162f;
+}
+
+#menu ul li ul li a:hover {
+  background: linear-gradient(90deg, cyan, #10162f); /***STC****/
+}
+
+#menu ul img {
+  margin-left: 5px;
+  margin-bottom: 2px;
+}
+/*------------------------------------------*/
+#filler {
+  float: left;
+  margin: 8px 0px 0px 395px;
+}
+#filler div {
+  float: left;
+  margin-left: 10px;
+}
+#filler i {
+  margin-top: 5px;
+  font-size: 30px;
+  transition-duration: 0.2s;
+}
+#filler i:hover {
+  color: aqua;
+  transform: scale(1.2);
+}
+/*******************************************************/
+
+#topPic {
+  width: 100%;
+  height: 700px;
+  background: linear-gradient(
+    180deg,
+    #10162f,
+    rgba(0, 0, 0, 0),
+    #000000af,
+    #10162f
+  );
+  padding: 450px 0px 0px 0px;
+}
+#topPic div {
+  text-align: center;
+  width: 100%;
+  height: 200px;
+  font-family: "Aldrich", sans-serif;
+  background: rgba(0, 0, 0, 0); /*
+  padding: 15px;*/
+  font-size: 80px;
+  font-weight: 100;
+  color: white;
+  word-spacing: 10px;
+  /*letter-spacing: 10px;*/
+}
+#eod {
+  color: crimson;
+  line-height: 0;
+  font-size: 110px;
+  font-weight: 800; /*500*/
+  letter-spacing: 20px;
+  padding-left: 19px;
+}
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////*/
+#lna {
+  width: 100%;
+  height: 1270px;
+  background: #10162f;
+  padding: 0 75px;
+  font-family: "Quantico", sans-serif;
+}
+
+/*ACTIVISION EFFECT*************************************************************************/
+#main {
+  width: 375px;
+  height: 480px;
+  background-color: #10262f;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+
+  float: left;
+  margin: 12.5px;
+  border: solid #797a7b 2px;
+}
+
+/*activision div effect#1 p1(top image)-----------------------------------*/
+#imgContainer {
+  /*wrapper for img*/
+  text-align: center;
+}
+#imgContainer img {
+  height: 260px;
+  margin-left: -45.7px;
+  transition-duration: 0.2s;
+}
+#main:hover img {
+  transform: scale(0.8, 0.8) translateY(-40px);
+}
+
+/*-----------------------------------------------------------*/
+
+/*activision div effect#1 p2(text part)-----------------------------------*/
+#textContainer {
+  color: white;
+  padding: 26px 20px;
+  transition-duration: 0.2s;
+}
+#date {
+  font-size: 14px;
+  margin-bottom: 0px;
+  font-weight: lighter;
+}
+#title {
+  font-weight: 100;
+  font-size: 20px;
+  padding: 14px 0;
+  line-height: 28px;
+  border-bottom: solid silver 2px;
+  transition-duration: 0.5s;
+}
+#text {
+  font-size: 14px;
+  padding: 14px 0;
+  line-height: 21px;
+  display: none;
+  font-family: "Roboto Flex", sans-serif;
+}
+#readMore {
+  margin-top: 40px;
+  transition: transform 0.2s, color 0.5s;
+  font-weight: lighter;
+}
+
+#main:hover #textContainer {
+  transform: translateY(-60px);
+}
+#main:hover #title {
+  border-bottom: solid dodgerblue 2px;
+}
+#main:hover #readMore {
+  color: dodgerblue;
+  transform: translateY(10px);
+}
+#main:hover #text {
+  height: 50px;
+  display: block;
+}
+/*-----------------------------------------------------------*/
+/*********************************************************************/
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#newGear {
+  width: 100%;
+  height: 1550px;
+  background: #10162f;
+  padding: 30px 50px;
+  font-family: "Roboto Flex", sans-serif;
+}
+#newGear b {
+  font-weight: 100;
+  font-family: "Quantico", sans-serif;
+}
+.ngSubBig {
+  width: 60.5%;
+  height: 300px;
+  float: left;
+  background: #10262f;
+
+  border: solid grey 2px;
+  margin: 10px;
+  padding: 20px 20px;
+}
+.ngSubSmall {
+  width: 36%;
+  height: 300px;
+  float: left;
+  background: #10262f;
+
+  border: solid grey 2px;
+  margin: 10px;
+  padding: 20px 20px;
+}
+#ngSubLast {
+  width: 98%;
+  height: 320px;
+  float: left;
+  background: #10262f;
+
+  margin: 10px;
+  border: solid grey 2px;
+  padding: 20px 20px;
+}
+
+/*-----------------------KALASHNIKOV EFFECT*/
+#tSub {
+  padding: 0 10px;
+  width: 100%;
+  height: 85%;
+  float: left; /*
+  border: dotted white 1px;*/
+  position: relative; /*enables absolute positioning to be applied on any child div*/
+}
+
+.ngSubBig h3 {
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  border-left: solid red 2px;
+  padding-left: 10px;
+  font-family: "Quantico", sans-serif;
+}
+.ngSubSmall h3 {
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 45px;
+  border-left: solid red 2px;
+  padding-left: 10px;
+  font-family: "Quantico", sans-serif;
+}
+#ngSubLast h3 {
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  border-left: solid red 2px;
+  padding-left: 10px;
+  font-family: "Quantico", sans-serif;
+}
+
+#tSub a {
+  text-decoration: none;
+  color: silver;
+  font-weight: 275;
+  line-height: 20px;
+}
+#tSub div {
+  float: right;
+  display: none;
+}
+
+.ngSubBig #tSub a:hover div {
+  /*
+  background: lime;*/
+  padding-top: 45px;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 310px;
+  width: 420px;
+  height: 230px;
+}
+.ngSubSmall #tSub a:hover div {
+  /*
+  background: lime;*/
+  padding-top: 35px;
+  display: block;
+  position: absolute;
+  top: -0;
+  left: 230px;
+  width: 200px;
+  height: 230px;
+}
+#ngSubLast #tSub a:hover div {
+  /*
+  background: lime;*/
+  padding-top: 0px;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 410px;
+  width: 900px;
+  height: 230px;
+}
+/*------------------------------------------/
+/************************************************************/
+
+/*////////////////////////////////////////////////////////////////////////////////////////////*/
+#esr {
+  width: 100%;
+  height: 1250px;
+  background: #10162f;
+  padding: 30px 0;
+}
+.esrSub {
+  width: 360px;
+  height: 400px;
+  float: left;
+  background: white;
+  margin: 20px 0px 45px 65px;
+  position: relative;
+  text-align: center;
+  border: solid silver 2px;
+}
+/*---------------------------------------------------------------EA gradient effect*/
+
+#name {
+  width: 100%;
+  font-size: 30px;
+  font-weight: 100;
+  word-spacing: 2px;
+  letter-spacing: 0px;
+  text-shadow: 0px 2px 8px #10162f;
+  color: white;
+  position: absolute;
+  top: 200px;
+  font-weight: bold;
+  transition-duration: 0.5s;
+  font-family: "Quantico", sans-serif;
+}
+#loadMoreLink {
+  width: 100%;
+  color: white;
+  font-size: 20px;
+  display: none;
+  position: absolute;
+  top: 215px;
+  font-family: "Aldrich", sans-serif;
+}
+.cWrapper {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.esrSub:hover #name {
+  position: absolute;
+  top: 165px;
+}
+.esrSub:hover #loadMoreLink {
+  display: block;
+  color: white;
+}
+.esrSub:hover #name {
+  font-size: 32px;
+  text-shadow: 0px 10px 5px #10162f;
+}
+.esrSub:hover .cWrapper {
+  background: rgb(0, 49, 83);
+  background: linear-gradient(60deg, #003153, rgba(0, 181, 226, 0.6), #003153);
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*---------------------------------------------------------------------------------*/
+.moreBtn {
+  width: 200px;
+  height: 50px;
+  border: solid #0768af 2px;
+  float: left;
+  margin-top: 30px;
+  margin-left: 502px;
+  padding-top: 15px; /*
+  border-radius: 25px;*/
+  background: #0768ad;
+  transition-duration: 0.3s;
+  font-family: "Quantico", sans-serif;
+}
+.moreBtn:hover {
+  background-color: #10162f;
+  border: solid #efefef 2px;
+}
+#esr .moreBtn {
+  margin-left: 577px;
+  margin-top: 15px;
+}
+#community .moreBtn {
+  margin-left: 577px;
+}
+/**********************************************General style**/
+.csub h2 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 15px 15px 30px 15px;
+  font-family: "Quantico", sans-serif;
+}
+/**************************************************************/
+
+/*//////////////////////////////////////////////////////////////////////*/
+
+#community {
+  width: 100%;
+  height: 550px;
+  font-weight: 380;
+  line-height: 20px;
+  background: #10162f;
+  padding-top: 30px;
+  padding-bottom: 80px;
+}
+.feedbacks {
+  color: black;
+  width: 397px;
+  height: 252px;
+  background: #a9cce3;
+  margin: 20px 0px 20px 40px;
+  float: left;
+  border-radius: 10px;
+  border: solid white 2px;
+  box-shadow: cyan 0px 7px 29px 0px;
+
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+
+.feedbacks:hover {
+  transform: translate(0, -20px);
+  box-shadow: cyan 0px 19px 38px; /*
+  margin-top: -5px;
+  box-shadow: cyan 0px 19px 38px;*/
+}
+
+#community img {
+  margin: 8px 0 0 10px;
+}
+.textPart {
+  padding: 0 20px;
+  width: 100%;
+  height: 130px;
+  font-family: "Roboto Flex", sans-serif;
+}
+.userHandle {
+  width: 100%;
+  height: 55.5px;
+  border-radius: 0 0 10px 10px;
+  border-top: dotted white 2px;
+}
+.userHandle div {
+  float: left;
+}
+.userNameTw {
+  padding-left: 10px;
+  width: 300px;
+  padding-top: 11px;
+  line-height: 19px;
+  height: 63px;
+  float: right;
+  font-family: "Roboto Flex", sans-serif;
+}
+
+/*/////////////////////////////////////////////////////////////////*/
+
+#bottomBranding {
+  width: 100%;
+  height: 600px;
+  background-color: rgba(0, 0, 0, 0.5);
+  background: linear-gradient(
+    180deg,
+    #10162f,
+    rgba(0, 0, 0, 0),
+    #000000af,
+    #10162f
+  );
+}
+#bottomBranding h1 {
+  text-shadow: -3px 3px 0px rgba(0, 0, 0, 0.84);
+  float: left;
+  background-color: #e00000;
+  margin: 320px 0px 30px 481px;
+  padding: 5px 20px 5px 25px;
+  color: #fdfefe;
+  font-size: 50px;
+  font-weight: 100;
+  letter-spacing: 8px;
+  border: solid white 4px;
+  font-family: "Oswald", sans-serif;
+}
+#bottomBranding div {
+  width: 100%;
+  height: 100px;
+  float: left;
+  font-size: 20px;
+  margin-top: 30px;
+}
+#bottomBranding marquee {
+  padding: 0;
+  margin: 0;
+  behavior: slide;
+}
+#bottomBranding img {
+  display: inline;
+  margin-left: 25px;
+  height: 50px;
+}
+
+/*////////////////////////////////////////////////////////////////////*/
+
+#footerArea {
+  font-family: "Roboto Flex", sans-serif;
+  width: 100%;
+  height: 380px;
+  background: #10162f url("../resources/camoGrey.jpg");
+  background-size: 300;
+  padding: 50px 100px 0px 90px;
+  line-height: 15x;
+  font-weight: 400;
+}
+.fSub {
+  width: 350px;
+  height: 220px;
+  float: left;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  border: solid 1.5px grey;
+  padding: 0 15px;
+  backdrop-filter: blur(9px);
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 100;
+  font-size: 14px;
+}
+.fSub h4 {
+  border-left: solid red 2px;
+  padding-left: 10px;
+  font-family: "Quantico", sans-serif;
+  font-weight: 550;
+}
+.fSub a {
+  text-decoration: none;
+  color: white;
+  margin: 0;
+}
+.fSub i {
+  margin-right: 10px;
+  margin-bottom: -5px;
+  font-size: 15px;
+}
+#fSubLast {
+  width: 100%;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#fSubLast i {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  margin-right: 10px;
+  font-size: 20px;
+  border: solid silver 2px;
+  backdrop-filter: blur(9px);
+  padding-top: 8px;
+  border-radius: 50%;
+  transition-duration: 0.2s;
+}
+#fSubLast i:hover {
+  transform: scale(1.1);
+  color: cyan;
+}
+
+/*//////////////////////////////////////////////////////////////////////////*/
